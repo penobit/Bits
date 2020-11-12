@@ -10,7 +10,7 @@ const APP_NAME = ''; //add front controller to URL (change only if you know what
  * This is the main components you need for your own microframework for web 2.0
  * OneFramework extends this Class
  * Contribute in:
- * https://github.com/juliomatcom/one-php-microframework
+ * https://github.com/penobit/PenoLite
  * Contact: juliomatcom@yandex.com
  * @author Julio Cesar Martin
  * @version 0.2.1
@@ -144,7 +144,7 @@ abstract class CoreFramework{
  * Contact: juliomatcom@yandex.com
  * Twitter @juliomatcom
  * Contribute to the project in Github
- * https://github.com/juliomatcom/one-php-microframework
+ * https://github.com/penobit/PenoLite
  *
  * Controllers must be in APP_DIR/controllers
  * Views must be in APP_DIR/views

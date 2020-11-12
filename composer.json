@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Penobit Restful Microframework",
     "keywords": ["Penobit", "PHP", "Framework", "Penobit Framework", "Penobit OpenSource"],
-    "homepage": "https://github.com/juliomatcom/one-php-microframework",
+    "homepage": "https://github.com/penobit/PenoLite",
     "license": "MIT",
     "authors": [
         {
