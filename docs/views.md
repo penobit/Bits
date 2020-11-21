@@ -21,7 +21,7 @@ $app->post('/books/',function() use ($app){
     <!-- Custom CSS -->
     <link href="/public/css/one-page-wonder.css" rel="stylesheet">
 ```
-##### You can change the default directory of view in the constants of de Framework   
+##### You can change the default directory of view in the constants of the PenoLite   
 The $app var and Vars passed  to Views are globally accesible from any view loaded by Response().
 
 ### Next: [More](https://github.com/penobit/PenoLite/blob/master/docs/more.md "More documentation of the One Framework")
