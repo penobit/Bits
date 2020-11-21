@@ -42,6 +42,6 @@ $app->delete('/books/{id_book}/',function($id_book) use ($app){
 ### Next: [Views ](https://github.com/penobit/PenoLite/blob/master/docs/views.md "Render views from controllers with One Framework")
 
 
-##### This documentation is served in [Penobit](http://penobit.com/penolite/docs/ "More documentation of the Penobit")
+##### This documentation is served in [Penobit](http://penobit.com/ "More documentation of the Penobit")
 ###### Contribute and improve this documentation.
 ###### Click Edit and Fork the project.
