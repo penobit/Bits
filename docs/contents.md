@@ -22,6 +22,7 @@ Just 2 simple class to help you develop easy and fast websites and webservices f
 ```
 
 
-##### This documentation is served in [oneframework.net ](http://oneframework.net/docs/ "More documentation of the One Framework")
+
+##### This documentation is served in [Penobit](http://penobit.com/ "More documentation of the Penobit")
 ###### Contribute and improve this documentation.
 ###### Click Edit and Fork the project.
