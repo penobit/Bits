@@ -9,7 +9,7 @@ Note: You can use controllers or not, but is always recomended for big projects.
     |       |-- index.php
     |       |-- src/
     |       |--     |-- Penobit/ 
-    |       |--     |--         |-- one_framework.php
+    |       |--     |--         |-- PenoLite.php
     |       |--     |-- controllers/    
     |       |--     |-- views/
     |       |--     |-- libs/
