@@ -2,21 +2,21 @@
 namespace Penobit;
 
 const ENV_DEV = 0;
-const ENV_PROD = 1;
+const ENV_PROD = 0;
 const APP_NAME = ''; //add front controller to URL (change only if you know what are you doing)
 
 /**
- * Class CoreFramework
+ * Class PenobitFramework
  * This is the main components you need for your own microframework for web 2.0
  * OneFramework extends this Class
  * Contribute in:
  * https://github.com/penobit/PenoLite
- * Contact: juliomatcom@yandex.com
- * @author Julio Cesar Martin
+ * Contact: info@penobit.com
+ * @author R8
  * @version 0.2.1
 
  */
-abstract class CoreFramework{
+abstract class PenobitFramework{
     //Main request Object
     protected $request;
     //routes Array like routes['REQUEST_METHOD'] = array(ObjRoute1,ObjRoute2...)
@@ -103,7 +103,7 @@ abstract class CoreFramework{
 
         $route_segments = preg_split('/[\/]+/', $route->route, null, PREG_SPLIT_NO_EMPTY);
 
-        if (CoreFramework::compareSegments($uri_segments, $route_segments, $slugs)){
+        if (PenobitFramework::compareSegments($uri_segments, $route_segments, $slugs)){
             //route matched
             return $route->function; //Object route
         }
@@ -141,7 +141,7 @@ abstract class CoreFramework{
 /**
  * Class App
  * Penobit MVC Micro Framework
- * Contact: juliomatcom@yandex.com
+ * Contact: info@penobit.com
  * Twitter @juliomatcom
  * Contribute to the project in Github
  * https://github.com/penobit/PenoLite
@@ -151,9 +151,9 @@ abstract class CoreFramework{
  * Assets must be in APP_DIR/public/
  *
  * @version 0.6.0
- * @author Julio Cesar Martin
+ * @author R8
  */
-class App extends CoreFramework{
+class App extends PenobitFramework{
     //instances vars and predefined configs
     protected $db;
     protected $prod = false;
@@ -387,7 +387,7 @@ class App extends CoreFramework{
 /**
  * Class Route
  * Formed by a string with the path and one callback function
- * @author Julio Cesar Martin
+ * @author R8
  */
 class Route{
     public $route;
@@ -406,7 +406,7 @@ class Route{
 /**
  * Class Request
  * Manage request params
- * @author Julio Cesar Martin
+ * @author R8
  */
 class Request{
     private $get;
@@ -489,7 +489,7 @@ class Request{
 /**
  * Class View
  * Load a view File with access to data and Framework
- * @author Julio Cesar Martin
+ * @author R8
  */
 class View
 {
