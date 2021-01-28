@@ -1,0 +1,36 @@
+{
+    "require": {
+        "altorouter/altorouter": "1.1.0",
+        "emojione/emojione": "^2.2",
+        "kint-php/kint": "^1.1",
+        "usmanhalalit/pixie": "^2.0",
+        "matthiasmullie/minify": "*",
+        "paragonie/random_compat": "^2.0",
+        "defuse/php-encryption": "^2.0",
+        "gettext/gettext": "^4.3",
+        "paypal/rest-api-sdk-php": "*",
+        "stripe/stripe-php": "^5.1",
+        "phpmailer/phpmailer": "^5.2",
+        "claviska/simpleimage": "^3.3",
+        "php-ffmpeg/php-ffmpeg": "^0.11.1",
+        "fightbulc/moment": "dev-master",
+        "penobit/google-translate-php": "^4.1",
+        "penobit/css-flip": "^1.0",
+        "scssphp/scssphp": "^1.4",
+        "voku/html-min": "^4.4",
+        "penobit/php-linq": "^1.1"
+    },
+
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+
+    "repositories": [
+        {
+            "url": "https://github.com/fightbulc/moment.php.git",
+            "type": "git"
+        }
+    ]
+}

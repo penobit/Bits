@@ -1,0 +1,19 @@
+{
+    "name": "penobit/php-linq",
+    "description": "the fast and modern library for easy data manipulation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Penobit",
+            "email": "info@penobit.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "Penobit\\Linq\\": "linq"
+      }
+    }
+}

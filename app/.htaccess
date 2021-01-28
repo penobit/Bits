@@ -1,0 +1,2 @@
+# NotFound error for direct access
+RedirectMatch 404 ^.*\.*
