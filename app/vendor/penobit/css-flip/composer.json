@@ -1,0 +1,24 @@
+{
+    "name": "penobit/css-flip",
+    "description": "Flips css codes from ltr to rtl (or rtl to ltr)",
+    "keywords": ["flip", "css", "penobit", "change direction", "change css direction", "css flip", "flip css"],
+    "license": "MIT",
+    "homepage": "http://github.com/Penobit/css-flip",
+    "authors": [
+        {
+            "name": "Penobit",
+            "email": "info@penobit.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+		"php": ">=7.2.0"
+	},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Penobit\\CSSFlip\\": "src/"
+        }
+    },
+    "autoload-dev": {}
+}

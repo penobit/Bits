@@ -1,29 +1,29 @@
 <?php
-require_once('src/Penobit/PenoLite.php');
 
-/*
-* Remember remove this examples to avoid collisions in routes
-*/
-//load Micro Framework with debug enabled
-$app = new \Penobit\App();
+/**
+ * @author Penobit <info@penobit.com>
+ * @copyright © Penobit.com, all rights received
+ * @license https://penobit.com/license/iLite
+ * @see https://Penobit.com
+ * @see https://GitHub.com/Penobit/iLite
+ * @version 1.0.8
+ */
 
-$app->get('/', function() use ( $app ){//Action on the Root URL
-    echo 'Hello world';
-});
+error_reporting(E_ALL);
+ob_start('ob_gzhandler') || ob_start();
 
-//simple Json Response example
-$app->get('/json/:name', function( $name ) use ( $app ){
-    return $app->JsonResponse(array('name' => $name));
-});
+// root path constants
+define('ROOT_PATH', __DIR__);
+define('APP_PATH', __DIR__.'/app');
 
-//test with slug in URL ( ':name' = '{name}' )
-$app->get('/:name/:priv', function( $name, $priv ) use ( $app ){
-    echo "<h1> Hello $name <small> $priv </small> </h1>";
-});
 
-$app->respond( function() use ( $app ){
-    return $app->ResponseHTML('<p> This is a response with code 404. </p>', 404);
-});
+// starting a session
+session_name('iLite-session');
+session_start();
 
-//Run
-$app->listen();
+// adding AppRoot directory to PHP include path and requiring autoload file
+set_include_path(get_include_path().PATH_SEPARATOR.ROOT_PATH);
+require_once APP_PATH.'/core/autoload.php';
+
+// Process user request
+$iLite->process();

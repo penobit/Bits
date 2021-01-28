@@ -1,0 +1,8 @@
+$spanColor: #F0F;
+span {
+    color: $spanColor;
+    & :before{
+        content: "this is a span tag";
+        color: $spanColor;
+    }
+}
