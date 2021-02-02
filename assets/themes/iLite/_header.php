@@ -94,7 +94,7 @@
                   </div>
 
                   <div class="header-right-btn d-none d-lg-block ml-65">
-                    <a href="#" class="border-btn">Log in</a>
+                    <a href="<?= url("login");?>" class="border-btn">Log in</a>
                   </div>
                 </div>
               </div>
